@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import P2PTransfer from '../Components/P2PTransfer'
-import './pages-css/SendMoney.css'
+import './pages-css/sendMoney.css'
 import InternationalTransfer from '../Components/InternationalTransfer'
 const SendMoney = () => {
   const [activeTab,setActiveTab] = useState('p2p')
