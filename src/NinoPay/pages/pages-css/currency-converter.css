@@ -1,0 +1,107 @@
+/* General container styling */
+.currency-converter {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form styling */
+.currency-converter .form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Labels */
+.currency-converter label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Select dropdowns */
+.currency-converter select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+select option{
+  cursor: pointer;
+}
+.currency-converter select:focus {
+  border-color: #007bff;
+}
+
+/* Input field */
+.currency-converter input[type="number"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.currency-converter input[type="number"]:focus {
+  border-color: #007bff;
+}
+
+/* Buttons */
+.currency-converter button {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.currency-converter button:hover {
+  background-color: #0056b3;
+}
+
+.currency-converter button.swap-btn {
+  background-color: #28a745;
+}
+
+.currency-converter button.swap-btn:hover {
+  background-color: #218838;
+}
+
+/* Converted result */
+.currency-converter .converted-result {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .currency-converter {
+    padding: 15px;
+  }
+
+  .currency-converter button {
+    font-size: 12px;
+  }
+  .currency-converter .converted-result {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,79 @@
+
+ /* progress bars */
+ .style1{
+  width: 100%;
+  margin: 20px 0;
+ }
+ .style2{
+  height: 10px;
+  background-color:#ddd;
+  border-radius: 5px;
+  overflow: hidden;
+ }
+ .style-text{
+  text-align: center;
+  margin-top: 10px;
+  color: #555;
+ }
+
+ .transactionPage{
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+ }
+ .transactionActions{
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+ }
+ .transactionActions input{
+  flex: 1;
+  padding: 8px;
+ }
+ .transactionActions button{
+  padding: 8px 12px;
+  background-color: royalblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+ }
+ .transactionlist{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+ }
+ .transaction-card{
+  background-color:#f7f9fc;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+ }
+ .transaction-card.success{
+  border-left: 5px solid green;
+ }
+ .transaction-card.pending{
+  border-left: 5px solid orange;
+ }
+ .transaction-card.failed{
+  border-left: 5px solid red;
+ }
+ .transactionInfo h4{
+  margin: 0;
+  font-size: 18px;
+ }
+ .transactionInfo p{
+
+  margin: 5px 0;
+  font-size: 14px;
+ }
+ .green{
+  color: green;
+ }
+ .red{
+  color: red;
+ }
+ .orange{
+  color: orange;
+ }

@@ -1,0 +1,46 @@
+:root{
+  --send-money-container:#041c51;
+}
+.green-mode{
+  --send-money-container:#044635;
+}
+.send-money-container{
+  max-width: 500px;margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #e0f7fa,#e3f2fd);
+  border-radius: 15px;box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+.send-money-title{
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--send-money-container);
+  font-weight: bold;
+}
+.tab-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.tab-btn{
+  padding: 10px 20px;
+  border: 2px solid var(--send-money-container);
+  background-color: transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--send-money-container);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tab-btn:hover{
+  background-color: var(--send-money-container);
+  color: white;
+}
+.tab-btn.clicked{
+  background-color: var(--send-money-container);
+  color: white;
+}
+.tab-content{
+  padding: 20px 0;
+}

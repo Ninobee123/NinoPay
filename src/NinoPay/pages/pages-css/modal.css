@@ -1,0 +1,81 @@
+
+
+/* Modal Overlay */
+.modal-overlay {
+  position: absolute; /* Position relative to the main element */
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal Box */
+.modal {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 350px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;justify-content: center;
+}
+
+.modal h3 {
+  margin-top: 0;
+  text-align: center; /* Center the title */
+}
+
+.modal ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.modal ul li {
+  background-color: #f3f3f3;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.modal button {
+  background-color: royalblue;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto 0; /* Center the button */
+}
+
+.modal button:hover {
+  background-color: #003eaa;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media screen and (max-width:768px){
+  .modal{
+    margin-left: 0;
+  } 
+}
